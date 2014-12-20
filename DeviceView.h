@@ -5,6 +5,7 @@
 //  Created by Leon Chew on 31/08/05.
 //  Copyright 2005 __MyCompanyName__. All rights reserved.
 //
+//This is test comment
 
 #import <Cocoa/Cocoa.h>
 
