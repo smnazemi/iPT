@@ -1,0 +1,101 @@
+{
+    IBClasses = (
+        {CLASS = DeviceView; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = IOSController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {linkTypeArray = NSArrayController; }; 
+            SUPERCLASS = OSController; 
+        }, 
+        {
+            ACTIONS = {
+                addHub = id; 
+                addLink = id; 
+                addPC = id; 
+                addRouter = id; 
+                addSwitch = id; 
+                removeDevice = id; 
+                removeLink = id; 
+                showDeviceModelViewer = id; 
+                showTerminal = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                controller = TopologyController; 
+                deviceArray = NSArrayController; 
+                deviceModelViewer = NSWindow; 
+                linkArray = NSArrayController; 
+                portTypeController = NSArrayController; 
+                terminalController = TerminalController; 
+            }; 
+            SUPERCLASS = NSPersistentDocument; 
+        }, 
+        {CLASS = MyPopUpButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButtonCell; }, 
+        {CLASS = NSLevelIndicator; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSPersistentDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {
+            CLASS = OSController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"CA_delegate" = id; ripArray = NSArrayController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TerminalController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                deviceArray = NSArrayController; 
+                hostTableArray = NSArrayController; 
+                networkArray = NSArrayController; 
+                pcArray = NSArrayController; 
+                ripEntryArray = NSArrayController; 
+                routerArray = NSArrayController; 
+                switchArray = NSArrayController; 
+                tabView = NSTabView; 
+                terminalWindow = NSPanel; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {addDevice = id; removeDevice = id; removeLink = id; updateGUI = id; }; 
+            CLASS = TopologyController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addDevicePanel = NSWindow; 
+                deviceArray = NSArrayController; 
+                deviceArrayStatic = NSArrayController; 
+                hubArray = NSArrayController; 
+                hubInspector = NSView; 
+                inspectorPanel = NSPanel; 
+                inspectorView = NSView; 
+                linkArray = NSArrayController; 
+                linkTableArray = NSArrayController; 
+                newDeviceDesc = NSTextField; 
+                newDeviceName = NSTextField; 
+                newDeviceXCoord = NSTextField; 
+                newDeviceYCoord = NSTextField; 
+                pcArray = NSArrayController; 
+                pcInspector = NSView; 
+                portArray = NSArrayController; 
+                portType = NSArrayController; 
+                removeDevicePanel = NSPanel; 
+                removeDeviceSelection = NSPopUpButton; 
+                routerArray = NSArrayController; 
+                routerInspector = NSView; 
+                switchArray = NSArrayController; 
+                switchInspector = NSView; 
+                topologyView = TopologyView; 
+                topologyWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = TopologyView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"CA_delegate" = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

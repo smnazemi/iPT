@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0297B5F208CD668500E585EF /* MyDocument.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0297B5F108CD668500E585EF /* MyDocument.xcdatamodel */; };
+		0297B63908CD707C00E585EF /* Switch.tif in Resources */ = {isa = PBXBuildFile; fileRef = 0297B63808CD707C00E585EF /* Switch.tif */; };
+		1A0FF18D08F545A1009B9BE0 /* OSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF18C08F545A1009B9BE0 /* OSController.m */; };
+		1A0FF20408F54E51009B9BE0 /* TerminalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF20308F54E51009B9BE0 /* TerminalView.m */; };
+		1A0FF25608F5543B009B9BE0 /* IOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF25508F5543B009B9BE0 /* IOSController.m */; };
+		1A0FF25C08F55451009B9BE0 /* DOSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF25B08F55451009B9BE0 /* DOSController.m */; };
+		1A26E57B091512A000194108 /* IOSPrivMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A26E57A091512A000194108 /* IOSPrivMode.m */; };
+		1A342DB1090F4A7100B1F713 /* IOSConfigMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A342DB0090F4A7100B1F713 /* IOSConfigMode.m */; };
+		1A73FA660903422F00E7669C /* PC.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1A73FA650903422F00E7669C /* PC.tif */; };
+		1A986B98090B86640089907D /* IOSLineConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A986B97090B86640089907D /* IOSLineConfig.m */; };
+		1AB0072F08DFF6CB0047380A /* About Panel.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1AB0072E08DFF6CB0047380A /* About Panel.tif */; };
+		1ABFC05808F163BE00F4E3D5 /* TerminalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFC05708F163BE00F4E3D5 /* TerminalController.m */; };
+		1ACFD46A0920E497000AFB99 /* delete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1ACFD4690920E497000AFB99 /* delete.tiff */; };
+		1AD59D7008C74EA800F197D8 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD59D6F08C74EA800F197D8 /* MyDocument.m */; };
+		1AD59D7308C74EB400F197D8 /* DeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD59D7208C74EB400F197D8 /* DeviceView.m */; };
+		1AD59D7608C74EC300F197D8 /* TopologyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD59D7508C74EC300F197D8 /* TopologyView.m */; };
+		1AD59D7908C74EFC00F197D8 /* TopologyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD59D7808C74EFC00F197D8 /* TopologyController.m */; };
+		1AD59D7E08C74F1F00F197D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD59D7D08C74F1F00F197D8 /* main.m */; };
+		1AD59D8008C74F2800F197D8 /* Accessibility.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D7F08C74F2800F197D8 /* Accessibility.strings */; };
+		1AD59D8408C74F5A00F197D8 /* Router.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D8308C74F5A00F197D8 /* Router.tif */; };
+		1AD59D8608C74F6200F197D8 /* Hub.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D8508C74F6200F197D8 /* Hub.tif */; };
+		1AD59D8E08C74F8900F197D8 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D8C08C74F8900F197D8 /* MainMenu.nib */; };
+		1AD59D9108C74F9500F197D8 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D8F08C74F9500F197D8 /* MyDocument.nib */; };
+		1AD59D9608C74FB300F197D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59D9508C74FB300F197D8 /* Info.plist */; };
+		1AD59DB308C7515100F197D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AD59DB108C7515100F197D8 /* InfoPlist.strings */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		AA29BD550920A17800A2558A /* iNetSimIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA29BD540920A17800A2558A /* iNetSimIcon.icns */; };
+		AA3E6D2F08E04E820038EAE9 /* Port.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3E6D2E08E04E820038EAE9 /* Port.m */; };
+		AA476F86090C90B1000A7EF7 /* OSSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA476F85090C90B1000A7EF7 /* OSSimulation.m */; };
+		AAACEF9908DFE8A600222D87 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = AAACEF9808DFE8A600222D87 /* Link.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0297B5F108CD668500E585EF /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		0297B63808CD707C00E585EF /* Switch.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Switch.tif; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1A0FF18B08F545A1009B9BE0 /* OSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSController.h; sourceTree = "<group>"; };
+		1A0FF18C08F545A1009B9BE0 /* OSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSController.m; sourceTree = "<group>"; };
+		1A0FF20208F54E51009B9BE0 /* TerminalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalView.h; sourceTree = "<group>"; };
+		1A0FF20308F54E51009B9BE0 /* TerminalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalView.m; sourceTree = "<group>"; };
+		1A0FF25408F5543B009B9BE0 /* IOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSController.h; sourceTree = "<group>"; };
+		1A0FF25508F5543B009B9BE0 /* IOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSController.m; sourceTree = "<group>"; };
+		1A0FF25A08F55451009B9BE0 /* DOSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOSController.h; sourceTree = "<group>"; };
+		1A0FF25B08F55451009B9BE0 /* DOSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOSController.m; sourceTree = "<group>"; };
+		1A26E57A091512A000194108 /* IOSPrivMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSPrivMode.m; sourceTree = "<group>"; };
+		1A342DB0090F4A7100B1F713 /* IOSConfigMode.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = IOSConfigMode.m; sourceTree = "<group>"; };
+		1A73FA650903422F00E7669C /* PC.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PC.tif; sourceTree = "<group>"; };
+		1A986B97090B86640089907D /* IOSLineConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSLineConfig.m; sourceTree = "<group>"; };
+		1AB0072E08DFF6CB0047380A /* About Panel.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "About Panel.tif"; sourceTree = "<group>"; };
+		1ABFC05608F163BE00F4E3D5 /* TerminalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalController.h; sourceTree = "<group>"; };
+		1ABFC05708F163BE00F4E3D5 /* TerminalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TerminalController.m; sourceTree = "<group>"; };
+		1ACFD4690920E497000AFB99 /* delete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = delete.tiff; sourceTree = "<group>"; };
+		1AD59D6E08C74EA400F197D8 /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		1AD59D6F08C74EA800F197D8 /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		1AD59D7108C74EB000F197D8 /* DeviceView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DeviceView.h; sourceTree = "<group>"; };
+		1AD59D7208C74EB400F197D8 /* DeviceView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DeviceView.m; sourceTree = "<group>"; };
+		1AD59D7408C74EC000F197D8 /* TopologyView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TopologyView.h; sourceTree = "<group>"; };
+		1AD59D7508C74EC300F197D8 /* TopologyView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TopologyView.m; sourceTree = "<group>"; };
+		1AD59D7708C74EF900F197D8 /* TopologyController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TopologyController.h; sourceTree = "<group>"; };
+		1AD59D7808C74EFC00F197D8 /* TopologyController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TopologyController.m; sourceTree = "<group>"; };
+		1AD59D7D08C74F1F00F197D8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AD59D7F08C74F2800F197D8 /* Accessibility.strings */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; path = Accessibility.strings; sourceTree = "<group>"; };
+		1AD59D8308C74F5A00F197D8 /* Router.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Router.tif; sourceTree = "<group>"; };
+		1AD59D8508C74F6200F197D8 /* Hub.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Hub.tif; sourceTree = "<group>"; };
+		1AD59D8D08C74F8900F197D8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		1AD59D9008C74F9500F197D8 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		1AD59D9508C74FB300F197D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD59DB208C7515100F197D8 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* iNetSim_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iNetSim_Prefix.pch; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* iNetSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNetSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA29BD540920A17800A2558A /* iNetSimIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iNetSimIcon.icns; sourceTree = "<group>"; };
+		AA3E6D2D08E04E820038EAE9 /* Port.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Port.h; sourceTree = "<group>"; };
+		AA3E6D2E08E04E820038EAE9 /* Port.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Port.m; sourceTree = "<group>"; };
+		AA476F84090C90B1000A7EF7 /* OSSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSimulation.h; sourceTree = "<group>"; };
+		AA476F85090C90B1000A7EF7 /* OSSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSimulation.m; sourceTree = "<group>"; };
+		AAACEF9708DFE8A600222D87 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		AAACEF9808DFE8A600222D87 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* iNetSim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AD59D6B08C74E8100F197D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0297B5F108CD668500E585EF /* MyDocument.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* iNetSim */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				1AD59D6B08C74E8100F197D8 /* Models */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = iNetSim;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A26E57A091512A000194108 /* IOSPrivMode.m */,
+				1A342DB0090F4A7100B1F713 /* IOSConfigMode.m */,
+				1A986B97090B86640089907D /* IOSLineConfig.m */,
+				AA3E6D2D08E04E820038EAE9 /* Port.h */,
+				AA3E6D2E08E04E820038EAE9 /* Port.m */,
+				1A0FF25408F5543B009B9BE0 /* IOSController.h */,
+				1A0FF25508F5543B009B9BE0 /* IOSController.m */,
+				1A0FF25A08F55451009B9BE0 /* DOSController.h */,
+				1A0FF25B08F55451009B9BE0 /* DOSController.m */,
+				1A0FF20208F54E51009B9BE0 /* TerminalView.h */,
+				1A0FF20308F54E51009B9BE0 /* TerminalView.m */,
+				1A0FF18B08F545A1009B9BE0 /* OSController.h */,
+				1A0FF18C08F545A1009B9BE0 /* OSController.m */,
+				1ABFC05608F163BE00F4E3D5 /* TerminalController.h */,
+				1ABFC05708F163BE00F4E3D5 /* TerminalController.m */,
+				1AD59D6E08C74EA400F197D8 /* MyDocument.h */,
+				1AD59D6F08C74EA800F197D8 /* MyDocument.m */,
+				1AD59D7408C74EC000F197D8 /* TopologyView.h */,
+				1AD59D7508C74EC300F197D8 /* TopologyView.m */,
+				1AD59D7108C74EB000F197D8 /* DeviceView.h */,
+				1AD59D7208C74EB400F197D8 /* DeviceView.m */,
+				1AD59D7708C74EF900F197D8 /* TopologyController.h */,
+				1AD59D7808C74EFC00F197D8 /* TopologyController.m */,
+				AAACEF9708DFE8A600222D87 /* Link.h */,
+				AAACEF9808DFE8A600222D87 /* Link.m */,
+				AA476F84090C90B1000A7EF7 /* OSSimulation.h */,
+				AA476F85090C90B1000A7EF7 /* OSSimulation.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* iNetSim_Prefix.pch */,
+				1AD59D7D08C74F1F00F197D8 /* main.m */,
+				1AD59D7F08C74F2800F197D8 /* Accessibility.strings */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1ACFD4690920E497000AFB99 /* delete.tiff */,
+				AA29BD540920A17800A2558A /* iNetSimIcon.icns */,
+				1A73FA650903422F00E7669C /* PC.tif */,
+				1AB0072E08DFF6CB0047380A /* About Panel.tif */,
+				1AD59DB108C7515100F197D8 /* InfoPlist.strings */,
+				1AD59D8308C74F5A00F197D8 /* Router.tif */,
+				1AD59D8508C74F6200F197D8 /* Hub.tif */,
+				0297B63808CD707C00E585EF /* Switch.tif */,
+				1AD59D9508C74FB300F197D8 /* Info.plist */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				1AD59D8C08C74F8900F197D8 /* MainMenu.nib */,
+				1AD59D8F08C74F9500F197D8 /* MyDocument.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* iNetSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD59D5C08C74E6800F197D8 /* Build configuration list for PBXNativeTarget "iNetSim" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iNetSim;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iNetSim;
+			productReference = 8D15AC370486D014006FF6A4 /* iNetSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1AD59D6008C74E6800F197D8 /* Build configuration list for PBXProject "iNetSim" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* iNetSim */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* iNetSim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				1AD59D8008C74F2800F197D8 /* Accessibility.strings in Resources */,
+				1AD59D8408C74F5A00F197D8 /* Router.tif in Resources */,
+				1AD59D8608C74F6200F197D8 /* Hub.tif in Resources */,
+				1AD59D8E08C74F8900F197D8 /* MainMenu.nib in Resources */,
+				1AD59D9108C74F9500F197D8 /* MyDocument.nib in Resources */,
+				1AD59D9608C74FB300F197D8 /* Info.plist in Resources */,
+				1AD59DB308C7515100F197D8 /* InfoPlist.strings in Resources */,
+				0297B63908CD707C00E585EF /* Switch.tif in Resources */,
+				1AB0072F08DFF6CB0047380A /* About Panel.tif in Resources */,
+				1A73FA660903422F00E7669C /* PC.tif in Resources */,
+				AA29BD550920A17800A2558A /* iNetSimIcon.icns in Resources */,
+				1ACFD46A0920E497000AFB99 /* delete.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD59D7008C74EA800F197D8 /* MyDocument.m in Sources */,
+				1AD59D7308C74EB400F197D8 /* DeviceView.m in Sources */,
+				1AD59D7608C74EC300F197D8 /* TopologyView.m in Sources */,
+				1AD59D7908C74EFC00F197D8 /* TopologyController.m in Sources */,
+				1AD59D7E08C74F1F00F197D8 /* main.m in Sources */,
+				0297B5F208CD668500E585EF /* MyDocument.xcdatamodel in Sources */,
+				AAACEF9908DFE8A600222D87 /* Link.m in Sources */,
+				AA3E6D2F08E04E820038EAE9 /* Port.m in Sources */,
+				1ABFC05808F163BE00F4E3D5 /* TerminalController.m in Sources */,
+				1A0FF18D08F545A1009B9BE0 /* OSController.m in Sources */,
+				1A0FF20408F54E51009B9BE0 /* TerminalView.m in Sources */,
+				1A0FF25608F5543B009B9BE0 /* IOSController.m in Sources */,
+				1A0FF25C08F55451009B9BE0 /* DOSController.m in Sources */,
+				1A986B98090B86640089907D /* IOSLineConfig.m in Sources */,
+				AA476F86090C90B1000A7EF7 /* OSSimulation.m in Sources */,
+				1A342DB1090F4A7100B1F713 /* IOSConfigMode.m in Sources */,
+				1A26E57B091512A000194108 /* IOSPrivMode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AD59D8C08C74F8900F197D8 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD59D8D08C74F8900F197D8 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		1AD59D8F08C74F9500F197D8 /* MyDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD59D9008C74F9500F197D8 /* English */,
+			);
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		1AD59DB108C7515100F197D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD59DB208C7515100F197D8 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AD59D5D08C74E6800F197D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iNetSim_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = iNetSim;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1AD59D5E08C74E6800F197D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iNetSim_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = iNetSim;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1AD59D5F08C74E6800F197D8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iNetSim_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = iNetSim;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Default;
+		};
+		1AD59D6108C74E6800F197D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"<Multiple",
+					"values>",
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AD59D6208C74E6800F197D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"<Multiple",
+					"values>",
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1AD59D6308C74E6800F197D8 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"<Multiple",
+					"values>",
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AD59D5C08C74E6800F197D8 /* Build configuration list for PBXNativeTarget "iNetSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD59D5D08C74E6800F197D8 /* Debug */,
+				1AD59D5E08C74E6800F197D8 /* Release */,
+				1AD59D5F08C74E6800F197D8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		1AD59D6008C74E6800F197D8 /* Build configuration list for PBXProject "iNetSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD59D6108C74E6800F197D8 /* Debug */,
+				1AD59D6208C74E6800F197D8 /* Release */,
+				1AD59D6308C74E6800F197D8 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addHub = id; 
+                addLink = id; 
+                addPC = id; 
+                addRouter = id; 
+                addSwitch = id; 
+                removeDevice = id; 
+                removeLink = id; 
+                showDeviceModelViewer = id; 
+                showTerminal = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {testing = id; }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSPersistentDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}
