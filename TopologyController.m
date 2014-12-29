@@ -1,5 +1,7 @@
 #import "TopologyController.h"
 
+#import "UDPMain.h"
+
 @implementation TopologyController
 
 - (void)awakeFromNib
@@ -27,7 +29,45 @@
 	// set initial position for adding devices
 	nextDevicePos.x = 0;
 	nextDevicePos.y = 0;
+    
+    
+    
+    int port = 7777;
+    NSString* hostName = @"192.168.1.16";
+    
+    // server mode
+    /*
+    udpReceiver = [[UDPMain alloc] init];
+    assert(udpReceiver != nil);
+    [udpReceiver runServerOnPort:(NSUInteger) port];
+    */
+    
+    // client mode
+    udpSender = [[UDPMain alloc] init];
+    assert(udpSender != nil);
+    [udpSender runClientWithHost:hostName port:(NSUInteger) port];
+   
 }
+
+/*
+ Method Name: addDevice:
+ Imported values:
+ - (id)sender - the object that is calling this method
+ Exported value: none
+ Purpose: This method adds a device to the topology view using user specified information
+ */
+- (IBAction)sendUDP:(id)sender
+{
+ 
+    //UDPClient* client = [[UDPClient alloc] initWithDestinationIP:"192.168.1.16" andPort:7777];
+    //UDPServer* server = [[UDPServer alloc] initWithPortNumber:7777];
+    //[client sendData: @"helloooooooooooooo" ];
+   
+  
+    
+}
+
+
 
 /*
  Method Name: addDevice:
@@ -142,6 +182,7 @@
 			// close the panel
 			[addDevicePanel performClose:self];
         }
+        
     }
 }
 

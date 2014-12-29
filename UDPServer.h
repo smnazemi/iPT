@@ -1,0 +1,72 @@
+//
+//  UDPServer.h
+//  iNetSim
+//
+//  Created by Cisco on 26/12/2014.
+//
+//
+
+#ifndef iNetSim_UDPServer_h
+#define iNetSim_UDPServer_h
+
+#import <Foundation/Foundation.h>
+
+#ifdef WIN32
+#include <WinSock2.h>
+#else
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+#endif
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+#include <signal.h>
+/*
+typedef enum HandPose
+{
+    OPEN_HAND,
+    GRAB,
+    THUMB_UP,
+    NO_HAND
+} HandPose;
+
+
+typedef struct HandState
+{
+    float x;
+    float y;
+    float z;
+    HandPose fingerPose;
+    float confidence;
+} HandState;
+*/
+
+@protocol UDPServerDelegate <NSObject>
+
+@required
+-(void)receivedData:(NSData*)_data;
+@end
+
+@interface UDPServer : NSObject {
+   	int m_socket;
+   	struct sockaddr_in m_sockaddr;
+    
+    CFSocketRef cfSocket;
+    CFRunLoopSourceRef cfSource;
+    
+    id<UDPServerDelegate> delegate;
+}
+
+@property (nonatomic, assign) id<UDPServerDelegate> delegate;
+
+-(id)initWithPortNumber:(int)_portNumber;
+
+//Callback method for UDP
+void receivedPacket (CFSocketRef s, CFSocketCallBackType callbacktype, CFDataRef address, const void *data, void *info);
+
+@end
+
+
+#endif
