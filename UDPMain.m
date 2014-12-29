@@ -1,4 +1,4 @@
-//
+/
 //  UDPSender.m
 //  iNetSim
 //
@@ -16,6 +16,7 @@
 @synthesize echo    ;//  = _echo;
 @synthesize sendTimer;// = _sendTimer;
 @synthesize sendCount;// = _sendCount;
+@synthesize receivedMessage;
 
 
 static NSString * DisplayAddressForAddress(NSData * address)
@@ -168,9 +169,12 @@ static NSString * DisplayErrorFromError(NSError *error)
     
     [self.echo startServerOnPort:port];
     
-    while (self.echo != nil) {
+    /*
+    while (self.echo != nil)
+    {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     }
+     */
     
     // The loop above is supposed to run forever.  If it doesn't, something must
     // have failed and we want main to return EXIT_FAILURE.
@@ -238,7 +242,8 @@ static NSString * DisplayErrorFromError(NSError *error)
 #pragma unused(echo)
     assert(data != nil);
     assert(addr != nil);
-    NSLog(@"received %@ from %@", DisplayStringFromData(data), DisplayAddressForAddress(addr));
+    NSString* receivedMessage = DisplayStringFromData(data);
+    NSLog(@"received %@ from %@", receivedMessage , DisplayAddressForAddress(addr));
 }
 
 - (void)echo:(UDPEcho *)echo didReceiveError:(NSError *)error

@@ -36,11 +36,11 @@
     NSString* hostName = @"192.168.1.16";
     
     // server mode (For receiving)
-    /*
+    
     udpReceiver = [[UDPMain alloc] init];
     assert(udpReceiver != nil);
     [udpReceiver runServerOnPort:(NSUInteger) port];
-    */
+    
     
     // client mode (For Sending)
     udpSender = [[UDPMain alloc] init];

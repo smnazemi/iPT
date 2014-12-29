@@ -155,10 +155,12 @@
         }
         
         // Echo the data back to the sender.
-        
-        if (self.isServer) {
+        /*
+        if (self.isServer)
+        {
             [self sendData:dataObj toAddress:addrObj];
         }
+         */
     }
     
     // If we got an error, tell the delegate.

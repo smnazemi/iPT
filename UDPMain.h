@@ -16,6 +16,7 @@
     UDPEcho *      echo;
     NSTimer *      sendTimer;
     NSUInteger     sendCount;
+    NSString* receivedMessage;
 }
 
 - (BOOL)runServerOnPort:(NSUInteger)port;
@@ -29,6 +30,7 @@
 @property (nonatomic, strong, readwrite) UDPEcho *      echo;
 @property (nonatomic, strong, readwrite) NSTimer *      sendTimer;
 @property (nonatomic, assign, readwrite) NSUInteger     sendCount;
+@property (nonatomic, assign, readwrite) NSString*     receivedMessage;
 
 @end
 
