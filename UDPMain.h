@@ -20,6 +20,7 @@
 
 - (BOOL)runServerOnPort:(NSUInteger)port;
 - (BOOL)runClientWithHost:(NSString *)host port:(NSUInteger)port;
+- (void)sendPacket : (NSString*) message;
 
 @end
 

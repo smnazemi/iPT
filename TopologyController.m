@@ -35,17 +35,18 @@
     int port = 7777;
     NSString* hostName = @"192.168.1.16";
     
-    // server mode
+    // server mode (For receiving)
     /*
     udpReceiver = [[UDPMain alloc] init];
     assert(udpReceiver != nil);
     [udpReceiver runServerOnPort:(NSUInteger) port];
     */
     
-    // client mode
+    // client mode (For Sending)
     udpSender = [[UDPMain alloc] init];
     assert(udpSender != nil);
     [udpSender runClientWithHost:hostName port:(NSUInteger) port];
+    
    
 }
 
@@ -64,6 +65,7 @@
     //[client sendData: @"helloooooooooooooo" ];
    
   
+    [udpSender sendPacket: @"hello from apple"];
     
 }
 

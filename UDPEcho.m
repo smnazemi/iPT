@@ -479,10 +479,12 @@ static void SocketReadCallback(CFSocketRef s, CFSocketCallBackType type, CFDataR
         // If we can create the socket, we're good to go.  Otherwise, we report an error
         // to the delegate.
         
-        if (success) {
+        if (success)
+        {
             self.port = port;
             
-            if ( (self.delegate != nil) && [self.delegate respondsToSelector:@selector(echo:didStartWithAddress:)] ) {
+            if ( (self.delegate != nil) && [self.delegate respondsToSelector:@selector(echo:didStartWithAddress:)] )
+            {
                 CFDataRef   localAddress;
                 
                 localAddress = CFSocketCopyAddress(self->_cfSocket);
@@ -634,9 +636,12 @@ static void HostResolveCallback(CFHostRef theHost, CFHostInfoType typeInfo, cons
 {
     // If you call -sendData: on a object in server mode or an object in client mode
     // that's not fully set up (hostAddress is nil), we just ignore you.
-    if (self.isServer || (self.hostAddress == nil) ) {
+    if (self.isServer || (self.hostAddress == nil) )
+    {
         assert(NO);
-    } else {
+    }
+    else
+    {
         [self sendData:data toAddress:nil];
     }
 }

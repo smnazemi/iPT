@@ -195,10 +195,12 @@ static NSString * DisplayErrorFromError(NSError *error)
     
     [self.echo startConnectedToHostName:host port:port];
     
+    /*
     while (self.echo != nil)
     {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
     }
+     */
     
     // The loop above is supposed to run forever.  If it doesn't, something must
     // have failed and we want main to return EXIT_FAILURE.
@@ -206,7 +208,7 @@ static NSString * DisplayErrorFromError(NSError *error)
     return NO;
 }
 
-- (void)sendPacket
+- (void)sendPacket : (NSString*) message
 // Called by the client code to send a UDP packet.  This is called immediately
 // after the client has 'connected', and periodically after that from the send
 // timer.
@@ -216,7 +218,8 @@ static NSString * DisplayErrorFromError(NSError *error)
     assert(self.echo != nil);
     assert( ! self.echo.isServer );
     
-    data = [[NSString stringWithFormat:@"%zu bottles of beer on the wall", (99 - self.sendCount)] dataUsingEncoding:NSUTF8StringEncoding];
+    data = [[NSString stringWithFormat: message] dataUsingEncoding:NSUTF8StringEncoding];
+    //data = [[NSString stringWithFormat:@"%zu AFSHIN bottles of beer on the wall", (99 - self.sendCount)] dataUsingEncoding:NSUTF8StringEncoding];
     assert(data != nil);
     
     [self.echo sendData:data];
@@ -271,6 +274,7 @@ static NSString * DisplayErrorFromError(NSError *error)
 - (void)echo:(UDPEcho *)echo didStartWithAddress:(NSData *)address
 // This UDPEcho delegate method is called after the object has successfully started up.
 {
+    
     assert(echo == self.echo);
 #pragma unused(echo)
     assert(address != nil);
@@ -285,11 +289,13 @@ static NSString * DisplayErrorFromError(NSError *error)
     
     if ( ! self.echo.isServer )
     {
-        [self sendPacket];
+        [self sendPacket : @"UDP Started"];
         
-        assert(self.sendTimer == nil);
-        self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendPacket) userInfo:nil repeats:YES];
+    //    assert(self.sendTimer == nil);
+    //    self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendPacket) userInfo:nil repeats:YES];
     }
+    
+    
 }
 
 - (void)echo:(UDPEcho *)echo didStopWithError:(NSError *)error
