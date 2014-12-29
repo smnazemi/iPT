@@ -4,8 +4,14 @@
 #import "TopologyView.h"
 #import "Port.h"
 
+@class UDPMain;
+
 @interface TopologyController : NSObject
 {
+    UDPMain* udpSender;
+    UDPMain* udpReceiver;
+    
+    
 	IBOutlet TopologyView *topologyView;
 	IBOutlet NSWindow *topologyWindow;
 	IBOutlet NSPanel *inspectorPanel;
@@ -47,6 +53,7 @@
 }
 
 - (IBAction)addDevice:(id)sender;
+- (IBAction)sendUDP:(id)sender;
 - (IBAction)updateGUI:(id)sender;
 - (void)addHub;
 - (void)addSwitch;
