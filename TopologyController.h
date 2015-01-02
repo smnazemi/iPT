@@ -77,5 +77,6 @@
                  forDevice:(NSManagedObject *)device;
 - (void)createPort:(NSManagedObject *)device;
 - (NSArray *)links;
+- (void) OnDocumnetClosed;
 
 @end

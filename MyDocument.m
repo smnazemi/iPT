@@ -44,6 +44,14 @@
 	
 }
 
+- (void) canCloseDocumentWithDelegate:(id)delegate shouldCloseSelector:(SEL)shouldCloseSelector contextInfo:(void *)contextInfo;
+{
+
+    [controller OnDocumnetClosed];
+    
+    [super canCloseDocumentWithDelegate:delegate shouldCloseSelector: shouldCloseSelector contextInfo: contextInfo];
+}
+
 
 - (id)initWithType:(NSString *)type error:(NSError **)error //Added by Leong on 11/10/2005
 {

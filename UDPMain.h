@@ -17,7 +17,10 @@
     NSTimer *      sendTimer;
     NSUInteger     sendCount;
     NSString* receivedMessage;
+    unsigned long m_msgCounter;
 }
+
+- (id)init;
 
 - (BOOL)runServerOnPort:(NSUInteger)port;
 - (BOOL)runClientWithHost:(NSString *)host port:(NSUInteger)port;

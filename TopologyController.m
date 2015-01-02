@@ -59,16 +59,14 @@
  */
 - (IBAction)sendUDP:(id)sender
 {
- 
-    //UDPClient* client = [[UDPClient alloc] initWithDestinationIP:"192.168.1.16" andPort:7777];
-    //UDPServer* server = [[UDPServer alloc] initWithPortNumber:7777];
-    //[client sendData: @"helloooooooooooooo" ];
-   
-  
     [udpSender sendPacket: @"hello from apple"];
-    
+  
 }
 
+- (void)OnDocumnetClosed
+{
+    [udpSender sendPacket: @"Mac Finished"];
+}
 
 
 /*

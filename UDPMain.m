@@ -18,6 +18,17 @@
 @synthesize receivedMessage;
 
 
+- (id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        // do nothing
+    }
+    m_msgCounter = 0;
+    return self;
+}
+
 static NSString * DisplayAddressForAddress(NSData * address)
 // Returns a dotted decimal string for the specified address (a (struct sockaddr)
 // within the address NSData).
@@ -221,6 +232,11 @@ static NSString * DisplayErrorFromError(NSError *error)
     assert(self.echo != nil);
     assert( ! self.echo.isServer );
     
+   
+    message = [NSString stringWithFormat:@"%ld %@", m_msgCounter++, message];
+    // string1 is "A string: string, a float: 31415.93"
+    
+    
     data = [[NSString stringWithFormat: message] dataUsingEncoding:NSUTF8StringEncoding];
     //data = [[NSString stringWithFormat:@"%zu AFSHIN bottles of beer on the wall", (99 - self.sendCount)] dataUsingEncoding:NSUTF8StringEncoding];
     assert(data != nil);
@@ -293,7 +309,7 @@ static NSString * DisplayErrorFromError(NSError *error)
     
     if ( ! self.echo.isServer )
     {
-        [self sendPacket : @"UDP Started"];
+        [self sendPacket : @"Mac Started"];
         
     //    assert(self.sendTimer == nil);
     //    self.sendTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendPacket) userInfo:nil repeats:YES];
